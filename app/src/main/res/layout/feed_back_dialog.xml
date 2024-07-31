@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_gravity="center"
+        android:background="@drawable/feedback_diaolog"
+        android:id="@+id/container"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/feedback_page_title"
+            android:text="Feedback"
+            android:textColor="@color/primary_text"
+            android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/feedback_comment"
+            android:inputType="textMultiLine"
+            app:layout_constraintTop_toBottomOf="@id/feedback_page_title"
+            android:layout_marginTop="24dp"
+            android:lines="6"
+            android:padding="10dp"
+            android:textColorHint="@color/primary_text"
+            android:textColor="@color/primary_text"
+            android:elevation="8dp"
+            android:hint="Comments or Suggestions?"
+            android:background="@drawable/feedback_component_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/feedback_submit"
+            android:elevation="16dp"
+            android:outlineSpotShadowColor="@color/black"
+            android:outlineAmbientShadowColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/feedback_comment"
+            app:layout_constraintEnd_toEndOf="@id/feedback_comment"
+            android:layout_marginTop="24dp"
+            android:textAllCaps="false"
+            android:text="Submit"
+            android:textColor="@color/primary_text"
+            android:background="@drawable/feedback_component_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonClose"
+        android:src="@drawable/ic_close_close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container"
+        app:backgroundTint="@color/orange_light"
+        app:rippleColor="@null"
+        android:elevation="0dp"
+        app:elevation="0dp"
+        app:fabSize="mini"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="24dp"
+        app:tint="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

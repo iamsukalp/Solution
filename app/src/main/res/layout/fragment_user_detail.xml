@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.UserDetailFragment">
+
+
+    <ImageView
+        android:id="@+id/userDetails_illustration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        android:src="@drawable/ic_illustrations_details"
+        android:layout_width="250dp"
+        android:layout_height="250dp"/>
+
+    <TextView
+        android:id="@+id/userDetails_name_label"
+        app:layout_constraintStart_toStartOf="@id/userDetails_illustration"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="18sp"
+        android:text="What should we call you?"
+        android:textColor="@color/primary_text"
+        app:layout_constraintVertical_bias="0.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/userDetails_name"
+        app:layout_constraintTop_toBottomOf="@id/userDetails_name_label"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/basic_et_bg"
+        android:elevation="12dp"
+        android:outlineSpotShadowColor="@color/white"
+        android:outlineAmbientShadowColor="@color/white"
+        android:textColorHint="@color/primary_text"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp"
+        android:hint="Jhon Doe"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        app:layout_constraintEnd_toEndOf="@id/userDetails_illustration"
+        app:layout_constraintStart_toStartOf="@id/userDetails_name_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/userDetails_saveBtn"
+        app:layout_constraintEnd_toEndOf="@id/userDetails_name"
+        app:layout_constraintTop_toBottomOf="@id/userDetails_name"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/basic_button_bg"
+        android:text="Save"
+        android:elevation="16dp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.OTPFragment">
+
+    <ImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        android:layout_width="250dp"
+        android:src="@drawable/ic_illustration_otp"
+        android:layout_height="250dp"/>
+
+
+    <TextView
+        android:id="@+id/otp_label"
+        android:text="Authenticate with OTP"
+        android:textColor="@color/primary_text"
+        app:layout_constraintStart_toStartOf="@id/otp_pin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.53"
+        app:layout_constraintHorizontal_bias="0.35"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.chaos.view.PinView
+        android:id="@+id/otp_pin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/otp_label"
+        android:layout_marginTop="15dp"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:hint="Hint"
+        android:inputType="numberPassword"
+        android:itemBackground="@drawable/basic_et_bg"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemHeight="36dp"
+        app:itemRadius="4dp"
+        app:itemSpacing="10dp"
+        app:itemWidth="36dp"
+        app:lineWidth="2dp"
+        app:viewType="rectangle" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/otp_loginBtn"
+        app:layout_constraintTop_toBottomOf="@id/otp_pin"
+        android:layout_marginTop="25dp"
+        android:text="Login"
+        android:paddingVertical="-5dp"
+        android:elevation="16dp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:textColor="@color/primary_text"
+        android:textAllCaps="false"
+        android:background="@drawable/basic_button_bg"
+        app:layout_constraintEnd_toEndOf="@id/otp_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

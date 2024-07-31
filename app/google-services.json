@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "854071663671",
+    "firebase_url": "https://spatial-subject-315608-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "spatial-subject-315608",
+    "storage_bucket": "spatial-subject-315608.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854071663671:android:62f6f5017ca013bc49f3b2",
+        "android_client_info": {
+          "package_name": "com.appsters.flexx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854071663671-mdc8c9qnu9vhu9qsgg1alq2dse5s3uhl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATNqPuaekhpRQinBnQwoY9qq7zZI3ga-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854071663671-mdc8c9qnu9vhu9qsgg1alq2dse5s3uhl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

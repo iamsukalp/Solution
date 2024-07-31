@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <group android:checkableBehavior="single" >
+       <item android:title="Home"
+           android:icon="@drawable/home_selector"
+           app:showAsAction="always"
+           android:id="@+id/homeFragment"/>
+       <item android:title="Star"
+           android:icon="@drawable/ic_star"
+           app:showAsAction="always"
+           android:id="@+id/starFragment"/>
+    <item
+        android:title="Users"
+        android:icon="@drawable/users_selector"
+        app:showAsAction="always"
+        android:id="@+id/usersFragment"/>
+
+
+   </group>
+</menu>
